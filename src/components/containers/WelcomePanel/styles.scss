@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/text.scss';
+
+.welcome-panel {
+  width: 536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .welcome-header {
+    margin-top: 56px;
+  }
+  .welcome-title {
+    font-size: 24px;
+    line-height: 30px;
+    color: $dark-black;
+    @extend .text-mulish-bold;
+    white-space: pre-wrap;
+  }
+  .welcome-subtitle {
+    margin-top: 4px;
+    font-size: 18px;
+    line-height: 23px;
+    color: $light-black;
+  }
+  .welcome-content {
+    margin-top: 56px;
+    > :not(:first-child) {
+      margin-top: 28px;
+    }
+  }
+  .welcome-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .welcome-item-content {
+    flex: 1;
+    margin-left: 32px;
+  }
+  .welcome-item-title {
+    font-size: 18px;
+    line-height: 23px;
+    color: $dark-black;
+    @extend .text-mulish-bold;
+  }
+  .welcome-item-description {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $light-black;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+
+#modal-container {
+  position: fixed;
+  z-index: $modal-z;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  pointer-events: none;
+}
+
+.modal {
+  z-index: $modal-z;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: $light-black, $alpha: 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+}

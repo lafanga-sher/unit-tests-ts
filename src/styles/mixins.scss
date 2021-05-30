@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+@mixin media-below-or-equal-width($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin media-desktop-large-above {
+  @media screen and (min-width: $desktop-large-min-width) {
+    @content;
+  }
+}

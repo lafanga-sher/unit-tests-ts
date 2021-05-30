@@ -1,0 +1,41 @@
+// fonts
+.text-mulish-extra-bold {
+  font-family: 'Mulish';
+  font-weight: 800;
+  font-style: normal;
+}
+
+.text-mulish-bold {
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-mulish-semibold {
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-style: normal;
+}
+
+.text-mulish-italic {
+  font-family: 'Mulish';
+  font-weight: normal;
+  font-style: italic;
+}
+
+.text-mulish-regular {
+  font-family: 'Mulish';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-link {
+  @extend .text-mulish-bold;
+  color: $light-blue;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+em {
+  @extend .text-mulish-bold;
+}

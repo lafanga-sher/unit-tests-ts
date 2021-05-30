@@ -1,0 +1,15 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/text.scss';
+
+.password-tooltip-content {
+  font-size: 12px;
+  line-height: 15px;
+  color: $alice-blue;
+  .tooltip-title {
+    margin-bottom: 8px;
+    @extend .text-mulish-bold;
+  }
+  p:not(:first-of-type) {
+    margin-top: 4px;
+  }
+}

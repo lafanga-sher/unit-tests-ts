@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+@import '../../styles/text.scss';
+
+.login-screen {
+  width: 536px;
+  padding: 48px 0 32px;
+  display: flex;
+  flex-direction: column;
+  .form-content {
+    flex: 1;
+    padding-left: 92px;
+    padding-right: 92px;
+    display: flex;
+    flex-direction: column;
+  }
+  .password-field {
+    margin-top: 8px;
+  }
+  .remember-me {
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+  .login-button {
+    margin-top: 56px;
+    width: 263px;
+    align-self: center;
+  }
+  .links-container {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link-separator {
+    margin-left: 13px;
+    margin-right: 13px;
+    @extend .text-mulish-bold;
+    color: $light-blue;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .footer-container {
+    margin-top: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new-to-the-app {
+    font-size: 14px;
+    line-height: 18px;
+    color: $light-black;
+    @extend .text-mulish-semibold;
+    > * {
+      vertical-align: middle;
+    }
+    > img {
+      margin-right: 8px;
+    }
+  }
+  .register-button {
+    margin-top: 16px;
+    width: 263px;
+  }
+}

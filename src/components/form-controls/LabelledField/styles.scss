@@ -1,0 +1,85 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/text.scss';
+
+.labelled-field {
+  padding-top: 8px;
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    border-color: $gray;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .content-element {
+    flex: 1;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    @extend .text-mulish-semibold;
+    font-size: 16px;
+    line-height: 46px;
+    text-align: left;
+    color: $dark-black;
+  }
+  .text-container {
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: $white;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @extend .text-container-at-placeholder;
+    transition: all 100ms linear;
+    .info-icon {
+      margin-left: 4px;
+      width: 18px;
+      height: 18px;
+      transition: all 100ms linear;
+      position: relative;
+    }
+  }
+  .text {
+    color: $light-black;
+    @extend .text-mulish-regular;
+  }
+  .text-container-at-placeholder {
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+    pointer-events: none;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .text-container-at-label {
+    top: 0;
+    left: 13px;
+    transform: translate(0, -50%);
+    font-size: 12px;
+    line-height: 15px;
+    pointer-events: all;
+    .info-icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .right-element-container {
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error-text {
+    margin-top: 4px;
+    line-height: 15px;
+    height: 15px;
+    font-size: 12px;
+    @extend .text-mulish-italic;
+    color: $red;
+  }
+}

@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+
+.tooltip {
+  z-index: $tooltip-z;
+  .tooltip-content {
+    max-width: 222px;
+    background-color: $light-black;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba($color: $black, $alpha: 0.06);
+    font-size: 12px;
+    line-height: 18px;
+    padding: 16px;
+    color: $alice-blue;
+  }
+  .tooltip-arrow {
+    width: 24px;
+    height: 24px;
+    border: solid 12px $light-black;
+    pointer-events: none;
+  }
+  &[data-popper-placement*='top'] {
+    .tooltip-arrow {
+      bottom: -24px;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+  &[data-popper-placement*='bottom'] {
+    .tooltip-arrow {
+      top: -24px;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+}

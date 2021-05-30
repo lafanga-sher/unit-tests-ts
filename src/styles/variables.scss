@@ -1,0 +1,27 @@
+// colors
+$transparent: rgba(0, 0, 0, 0);
+$white: #fff;
+$black: #000;
+$alice-blue: #f2f8ff;
+$gray-blue: #dbeafc;
+$fade-blue: #669ac3;
+$light-blue: #03a9f4;
+$dark-blue: #01579b;
+$dark-black: #141c44;
+$deep-black: #333333;
+$light-black: #4e576f;
+$lighter-black: #666666;
+$red: #ff0033;
+$gray: #9097ac;
+$fade-gray: #707070;
+$light-gray: #f0f5f9;
+
+// z-index
+$dropdown-z: 90;
+$tooltip-z: 100;
+$modal-z: 150;
+
+// media
+$desktop-main-layout-wrap-max-width: 1240px; // this is the breakpoint where we will let the login/register/forgot password screen wrap
+$desktop-medium-min-width: 768px;
+$desktop-large-min-width: 1366px;

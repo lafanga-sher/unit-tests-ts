@@ -1,0 +1,48 @@
+@import './variables.scss';
+@import './text.scss';
+
+.btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @extend .text-mulish-extra-bold;
+  background: none;
+  padding: 0;
+  border: none;
+  &:not(:disabled) {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &.btn-capsule {
+    &.md {
+      height: 48px;
+      border-radius: 24px;
+      padding: 14px;
+      font-size: 16px;
+    }
+    &.sm {
+      height: 40px;
+      border-radius: 20px;
+      padding: 11px;
+      font-size: 14px;
+    }
+  }
+  &.btn-filled {
+    background-color: $dark-blue;
+    color: $white;
+    &:disabled {
+      background-color: $fade-blue;
+      color: rgba($color: $light-gray, $alpha: 0.9);
+    }
+  }
+  &.btn-outlined {
+    border: solid 1px $dark-blue;
+    color: $dark-blue;
+    &:disabled {
+      border-color: $fade-blue;
+    }
+  }
+}

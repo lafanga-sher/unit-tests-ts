@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/text.scss';
+
+.text-labelled-field {
+  .text-input {
+    border: none;
+    outline: none;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    &:disabled {
+      color: $gray;
+      background-color: transparent;
+    }
+  }
+}

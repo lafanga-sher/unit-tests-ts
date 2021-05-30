@@ -1,0 +1,41 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/text.scss';
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  label {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .checkbox-input {
+    display: none;
+  }
+  .checkbox-wrapper {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: solid 2px $gray;
+  }
+  .checkbox-checker {
+    display: none;
+    fill: $gray;
+  }
+  .checkbox-input:checked ~ .checkbox-wrapper {
+    .checkbox-checker {
+      display: block;
+    }
+  }
+  .checkbox-label {
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 15px;
+    color: $light-black;
+    @extend .text-mulish-regular;
+  }
+}

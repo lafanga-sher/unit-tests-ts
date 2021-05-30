@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/text.scss';
+
+.message-modal-dialog {
+  width: 352px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: $white;
+  box-shadow: rgba($color: $black, $alpha: 0.08) 0 -4px 16px;
+  display: flex;
+  flex-direction: column;
+  .dialog-header {
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .close-button {
+    align-self: flex-end;
+  }
+  .dialog-title {
+    flex: 1;
+    margin-left: 8px;
+    @extend .text-mulish-bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: $dark-black;
+  }
+  .dialog-content {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .dialog-message {
+    font-size: 14px;
+    line-height: 18px;
+    color: $light-black;
+  }
+  .action-button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .action-button {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+}

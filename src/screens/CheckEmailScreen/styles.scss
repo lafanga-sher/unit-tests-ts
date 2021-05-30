@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.check-email-screen {
+  width: 536px;
+  padding: 48px 0 32px;
+  display: flex;
+  flex-direction: column;
+  .form-content {
+    flex: 1;
+    padding-left: 92px;
+    padding-right: 92px;
+    display: flex;
+    flex-direction: column;
+  }
+  .instruction-text {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 19px;
+    color: $light-black;
+    > p:not(:first-of-type) {
+      margin-top: 24px;
+    }
+  }
+  .form-content-footer {
+    margin-top: auto;
+    padding-top: 32px;
+    align-self: center;
+  }
+  .login-button {
+    width: 263px;
+  }
+}

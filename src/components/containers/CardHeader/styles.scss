@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/text.scss';
+
+.card-header {
+  margin-bottom: 40px;
+  padding-left: 92px;
+  padding-right: 92px;
+  display: flex;
+  align-items: flex-end;
+  .header-side {
+    flex: 1;
+    display: flex;
+    &.left-side {
+      justify-content: flex-start;
+    }
+    &.right-side {
+      justify-content: flex-end;
+    }
+  }
+  .card-title {
+    flex: none;
+    color: $deep-black;
+    font-size: 20px;
+    line-height: 25px;
+    @extend .text-mulish-bold;
+  }
+}
